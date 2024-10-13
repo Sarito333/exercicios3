@@ -1,0 +1,30 @@
+*{
+    font-family: Verdana;
+    font-size: 18px;
+}
+
+.formato{
+    width: 400px;
+    height: 230px;
+ 
+    padding: 30px;
+    border-style: double;
+    border-color: red;
+    border-width: 22px;
+}
+
+.ok{
+    background-color: yellow;
+    margin-top: 2px;
+    border: solid, 1px, black;
+}
+
+.botao{
+    width: 70px;
+    height: 30px;
+    border-radius: 2px;
+    text-align: center;
+    color: black;
+    margin-top: 2px;
+    font-size: 9px;
+}

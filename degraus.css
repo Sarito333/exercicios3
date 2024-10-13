@@ -1,0 +1,23 @@
+#alturaDegrau, #alturaObjetivo{
+    margin-top: 5px ;
+    width: 200px;
+    height: 20px;
+    border-radius: 1px;
+}
+
+.degrau{
+    font-size: 17px;
+}
+
+.botao{
+    border-radius: 5px;
+    width: 80px;
+    height: 30px;
+    background-color: dimgrey;
+    color: white;
+}
+
+#resultado{
+    font-size: 17px;
+    
+}

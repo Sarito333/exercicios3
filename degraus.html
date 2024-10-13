@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altura do degrau</title>
+    <link rel="stylesheet" href="degraus.css" type="text/css" />
+</head>
+<body>
+    <form class="forma">
+        <label for="alturaDegrau" class="degrau"><strong> Altura do degrau (em metros):</strong></label></br>
+        <input type="number" id="alturaDegrau" required><br><br>
+        <label for="alturaObjetivo" class="degrau"><strong> Altura que o pedreiro deseja alcançar (em metros):</strong></label></br>
+        <input type="number" id="alturaObjetivo" required><br><br>
+        <button type="button" class="botao" onclick="calcularDegrus()">Calcular</button>
+        <p id="resultado"></p>
+      </form>
+    
+      <script>
+        function calcularDegrus() {
+          const alturaDegrau = document.getElementById("alturaDegrau").value;
+          const alturaObjetivo = document.getElementById("alturaObjetivo").value;
+          const degrausNecessarios = Math.ceil(alturaObjetivo / alturaDegrau);
+          document.getElementById("resultado").innerHTML = `O pedreiro deve subir ${degrausNecessarios} degraus para alcançar sua altura objetivo.`;
+        }
+      </script>
+</body>
+</html>
